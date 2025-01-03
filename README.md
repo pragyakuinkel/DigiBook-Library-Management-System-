@@ -3,7 +3,7 @@
 DigiBook is a website which is designed to manage books, authors, publishers, borrowers and reviews for a library. There are features for three types of users: guest, user and admin user with access to different functionality. The website is developed using Laravel and bootstrap for front-end.
 1.2	Installation Process:
 Step 1: Install Laravel.
-![Install Laravel](screenshots/installLaravel.png)
+![Install Laravel](screenshot/installLaravel.png)
 
 
 Step 2: Installing Laravel Breeze:
