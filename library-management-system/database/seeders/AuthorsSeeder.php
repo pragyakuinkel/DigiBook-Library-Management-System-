@@ -16,7 +16,7 @@ class AuthorsSeeder extends Seeder
      */
     public function run()
     {
-        $authors=\App\Models\Authors::factory()->count(5)->create();
+        $authors=\App\Models\Authors::factory()->count(20)->create();
 
         foreach($authors as $author){
             

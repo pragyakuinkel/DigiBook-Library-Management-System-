@@ -16,7 +16,7 @@ class BookSeeder extends Seeder
      */
     public function run()
     {
-        $books=\App\Models\Book::factory()->count(5)->create();
+        $books=\App\Models\Book::factory()->count(20)->create();
 
         foreach($books as $book){
 

@@ -16,7 +16,7 @@ class PublisherSeeder extends Seeder
      */
     public function run()
     {
-        $publishers=\App\Models\Publisher::factory()->count(5)->create();
+        $publishers=\App\Models\Publisher::factory()->count(20)->create();
 
         foreach($publishers as $publisher){
             
