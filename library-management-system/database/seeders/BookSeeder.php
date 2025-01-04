@@ -38,6 +38,8 @@ class BookSeeder extends Seeder
                     'book_id' => $book->id,
                     'reviewable_type' => 'Books',
                     'review' =>  Str::random(10),
+                    'created_at'=>now(),
+                    'updated_at'=>now(),
                 ]);
 
                 DB::table('borrowers')->insert([
@@ -45,6 +47,8 @@ class BookSeeder extends Seeder
                     'book_id' => $book->id,
                     'borrowed_at' => now(),
                     'returned_at' => now(),
+                    'created_at'=>now(),
+                    'updated_at'=>now(),
                 ]);
                 
                 DB::table('reviews')->insert([
@@ -52,6 +56,8 @@ class BookSeeder extends Seeder
                     'publisher_id' => $book->publication,
                     'reviewable_type' => 'Publishers',
                     'review' =>  Str::random(10),
+                    'created_at'=>now(),
+                    'updated_at'=>now(),
                 ]);
             }
         }

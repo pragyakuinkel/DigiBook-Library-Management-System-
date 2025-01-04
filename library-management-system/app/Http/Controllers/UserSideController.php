@@ -92,7 +92,13 @@ class UserSideController extends Controller
     }
 
     //all book info
-    public function bookInfo($id,$userId=null){
+    public function bookInfo($id){
+
+        $userId=null;
+
+        if(Auth::user()){
+            $userId=Auth::user()->id;
+        }
 
         $authors = DB::table('authors')
                 ->get();

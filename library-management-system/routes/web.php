@@ -45,7 +45,7 @@ Route::get('/genreSelect/{id}', [UserSideController::class, 'allBookGenre'])->na
 Route::get('/selectBook/{value}', [UserSideController::class, 'selectBook'])->name('selectBook');
 
 //each book page
-Route::get('/book/{id}/{userId?}', [UserSideController::class, 'bookInfo'])->name('book');
+Route::get('/book/{id}', [UserSideController::class, 'bookInfo'])->name('book');
 
 // BOOK HISTORY
 Route::get('/bookHistory', [UserSideController::class, 'bookHistory'])->middleware(['auth', 'verified'])->name('bookHistory');

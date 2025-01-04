@@ -60,8 +60,9 @@ class ReviewController extends Controller
                     ->get();
 
         $reviews = DB::table('reviews')
+                    ->orderBy('id','DESC')
                     ->whereRaw('reviewable_type=?','Publishers')
-                    ->paginate(10);
+                    ->get();
 
         $users = DB::table('users')
                     ->get();
@@ -75,8 +76,9 @@ class ReviewController extends Controller
                     ->whereRaw('id=?', $id)
                     ->get();
         $reviews = DB::table('reviews')
+                    ->orderBy('id','DESC')
                     ->whereRaw('reviewable_type=?','Authors')
-                    ->paginate(10);
+                    ->get();
         $users = DB::table('users')
                     ->get();
         

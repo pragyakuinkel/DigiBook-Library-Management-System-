@@ -28,6 +28,8 @@ class PublisherSeeder extends Seeder
                     'publisher_id' => $publisher->id,
                     'reviewable_type' => 'Publishers',
                     'review' =>  Str::random(10),
+                    'created_at'=>now(),
+                    'updated_at'=>now(),
                 ]);
             }
         }

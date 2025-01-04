@@ -46,7 +46,6 @@
                             </div>
                         </form>
                     </div>
-                    {{ $reviews->links() }}
                 </div>
             </div>
         </div>
