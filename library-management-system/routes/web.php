@@ -27,10 +27,6 @@ Route::get('/register', function () {
     return view('auth.register');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth','is_admin','verified'])->name('dashboard');
-
 // ---------------------------------------------------------------------------------------------------------------------------------------------------
 // USER SIDE PAGE
 
