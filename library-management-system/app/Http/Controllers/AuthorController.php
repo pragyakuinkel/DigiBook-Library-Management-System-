@@ -40,10 +40,10 @@ class AuthorController extends Controller
 
     // select specific from author table
     public function selectAuthor($id){
-        $authors = DB::table('authors')
+        $author = DB::table('authors')
         ->whereRaw('id=?', $id)
-        ->get();
-        return view('admin.authors.editAuthor', ['authors' => $authors]);
+        ->first();
+        return view('admin.authors.editAuthor', ['author' => $author]);
     }
 
     // delete from author table

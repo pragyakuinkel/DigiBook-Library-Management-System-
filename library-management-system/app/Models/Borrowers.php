@@ -11,6 +11,8 @@ class Borrowers extends Model
 {
     use HasFactory;
 
+    protected $table = 'borrowers';
+
     protected $fillable = [
         'book_id',
         'user_id',

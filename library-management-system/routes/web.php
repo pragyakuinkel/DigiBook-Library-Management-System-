@@ -89,7 +89,7 @@ Route::post('/addbook', [BookController::class, 'store'])->middleware(['auth','i
 Route::get('/editBook/{id}', [BookController::class, 'singleBook'])->middleware(['auth','is_admin','verified'])->name('editBook');
 
 //add book
-Route::post('/editbook/{id}', [BookController::class, 'updateBook'])->middleware(['auth','is_admin','verified'])->name('editbook.update');
+Route::put('/editbook/{id}', [BookController::class, 'updateBook'])->middleware(['auth','is_admin','verified'])->name('editbook.update');
 
 //delete conformation page
 Route::post('/deleteBook/{id}', function (int $id) {
@@ -125,7 +125,7 @@ Route::post('/authors/{id}/delete', [AuthorController::class, 'deleteAuthor'])->
 Route::get('/editAuthor/{id}', [AuthorController::class, 'selectAuthor'])->middleware(['auth','is_admin','verified'])->name('authors.edit');
 
 // update the info of authors
-Route::post('/authors/{id}', [AuthorController::class, 'updateAuthor'])->middleware(['auth','is_admin','verified'])->name('authors.editIt');
+Route::put('/authors/{id}', [AuthorController::class, 'updateAuthor'])->middleware(['auth','is_admin','verified'])->name('authors.editIt');
 
 // ---------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -154,7 +154,7 @@ Route::post('/genre/{id}/delete', [GenreController::class, 'deleteGenre'])->midd
 Route::get('/editGenre/{id}', [GenreController::class, 'selectGenre'])->middleware(['auth','is_admin','verified'])->name('genre.edit');
 
 // update the info of authors
-Route::post('/genre/{id}', [GenreController::class, 'updateGenre'])->middleware(['auth','is_admin','verified'])->name('genre.editIt');
+Route::put('/genre/{id}', [GenreController::class, 'updateGenre'])->middleware(['auth','is_admin','verified'])->name('genre.editIt');
 
 // ---------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -182,7 +182,7 @@ Route::post('/addPublisher', [PublisherController::class, 'store'])->middleware(
 Route::get('/editPublisher/{id}', [PublisherController::class, 'selectPublisher'])->middleware(['auth','is_admin','verified'])->name('publishers.edit');
 
 //update the info publisher
-Route::post('/publishers/{id}', [PublisherController::class, 'updatePublisher'])->middleware(['auth','is_admin','verified'])->name('publishers.editIt');
+Route::put('/publishers/{id}', [PublisherController::class, 'updatePublisher'])->middleware(['auth','is_admin','verified'])->name('publishers.editIt');
 
 // ---------------------------------------------------------------------------------------------------------------------------------------------------
 

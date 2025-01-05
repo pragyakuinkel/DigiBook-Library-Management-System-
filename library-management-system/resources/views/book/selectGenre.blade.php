@@ -11,7 +11,7 @@
                             </h2>
                         </div>
 
-                        <div class="card-group flex text_color mt-1 mb-4" style="flex-wrap:wrap;border-radius: 15px;justify-content:center">
+                        <div class="card-group flex text_color mt-1 mb-4" style="flex-wrap:wrap;border-radius: 15px;justify-content:start">
                             @foreach($books as $book)
                                 @foreach($book_genre_select as $book_genre)
                                     @if($book_genre->book_id==$book->id)

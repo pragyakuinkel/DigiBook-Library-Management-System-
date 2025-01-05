@@ -1,6 +1,4 @@
 <x-app-layout>
-@foreach($authors as $author)
-
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 flex" style="justify-content:center">
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg w-full" style="justify-content:center">
@@ -9,7 +7,8 @@
                 </h2>
                 <form class="px-6 mb-6 w-full text_color" method="POST" action="{{ route('authors.editIt', $author->id) }}">
                     @csrf
-                    
+                    @method('PUT') 
+
                     <div>
                         <label for="name" class="text-xs">Author Name</label><br>
                         <input type="text" name="name" id="name" value="{{$author->name}}" class="w-full">
@@ -30,7 +29,8 @@
                         {{ __('Edit Author') }}
                     </button>
                 </form>
+            </div>
         </div>
     </div>
-@endforeach
+
 </x-app-layout>

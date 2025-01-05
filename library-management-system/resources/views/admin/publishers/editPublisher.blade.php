@@ -8,6 +8,7 @@
                 </h2>
                 <form class="p-6 w-full text_color" method="POST" action="{{ route('publishers.editIt', $publisher->id) }}">
                     @csrf
+                    @method('PUT') 
                     
                     <div>
                         <label for="name" class="text-xs">Publisher Name</label><br>

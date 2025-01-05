@@ -105,7 +105,41 @@ Search
 
 •	User can search through publisher name, author name, ISBN number and book name.
 
-1.4 Seeder:
+1.4 Database:
+
+1.4.1 Authors (authors table):
+
+![Author table](screenshot/authorTable.png)
+
+1.4.2 Publisher (publishers table):
+
+![Publisher table](screenshot/publishersTable.png)
+
+1.4.3 Genre (genres table):
+
+![Publisher table](screenshot/genreTable.png)
+
+1.4.4 Book (books table):
+
+![Book table](screenshot/booksTable.png)
+
+1.4.5 BookAuthor (book_authors table):
+
+![book_authors table](screenshot/bookAuthorsTable.png)
+
+1.4.6 BookGenre (book_genres table):
+
+![book_genres table](screenshot/bookGenresTable.png)
+
+1.4.7 Borrowers (borrowers table):
+
+![book_genres table](screenshot/borrowersTable.png)
+
+1.4.8 Reviews (reviews table):
+
+![book_genres table](screenshot/reviewsTable.png)
+
+1.5 Seeder:
 
 The seeder for user has 2 accounts 1 for admin and another for client so logging in is easier to login.
 
@@ -115,7 +149,7 @@ To run the seeder 'php artisan db:seed' is used:
 
 ![Seeder](screenshot/seeder.png)
 
-1.4.1 Project UI:
+1.5.1 Project UI:
 
 During the development and testing seeder is used so the photo is already existing in the storage folder that is the image in following images.
 
@@ -255,11 +289,11 @@ Author Review:
 
 ![Review](screenshot/authorReview.png)
 
-1.5 User Guide:
+1.6 User Guide:
 
-1.5.1 Admin: 
+1.6.1 Admin: 
 
-1.5.1.1 Genre:
+1.6.1.1 Genre:
 
 (1) Add New Genre:
 
@@ -296,7 +330,7 @@ genre is deleted and if cancel is clicked the genre isn't deleted.
 
 ![Genres](screenshot/deleteGenre.png)
 
-1.5.1.2 Publishers:
+1.6.1.2 Publishers:
 
 (1) Add New Publisher:
 
@@ -333,7 +367,7 @@ publisher is deleted and if cancel is clicked the publisher isn't deleted.
 
 ![Publisher](screenshot/deletePublisher.png)
 
-1.5.1.3 Authors:
+1.6.1.3 Authors:
 
 (1) Add New Author:
 
@@ -370,7 +404,7 @@ author is deleted and if cancel is clicked the author isn't deleted.
 
 ![Authors](screenshot/deleteAuthor.png)
 
-1.5.1.4 Books:
+1.6.1.4 Books:
 
 (1) Add New Book:
 
@@ -409,9 +443,9 @@ book is deleted and if cancel is clicked the author isn't deleted.
 
 ![Book](screenshot/deleteBook.png)
 
-1.5.1 Normal User: 
+1.6.1 Normal User: 
 
-1.5.1.1 Borrow:
+1.6.1.1 Borrow:
 
 Inorder to borrow the user must be logged in.
 
@@ -425,7 +459,7 @@ The user can see all the borrow history from book history.
 
 ![Borrow](screenshot/borrowHistory.png)
 
-1.5.1.2 Publisher Review:
+1.6.1.2 Publisher Review:
 
 In the book page, there the publication that the book was released by. By clicking on the publication name
 the reviews of the publication can be seen.
@@ -434,7 +468,7 @@ the reviews of the publication can be seen.
 
 ![Borrow](screenshot/publicationReview1.png)
 
-1.5.1.3 Author Review:
+1.6.1.3 Author Review:
 
 In the book page, there the authors that wrote the book. By clicking on the authors name
 the reviews of the author can be seen.
@@ -443,7 +477,7 @@ the reviews of the author can be seen.
 
 ![Borrow](screenshot/authorReview1.png)
 
-1.5.1.4 Search Feature:
+1.6.1.4 Search Feature:
 
 The books can be searched based on book name, isbn number, publisher name and author name.
 If the search mataches it shows the list of book with the match.
@@ -452,7 +486,7 @@ If the search mataches it shows the list of book with the match.
 
 ![Book Name](screenshot/bookName1.png)
 
-1.5.1.4 Filter by Genre:
+1.6.1.4 Filter by Genre:
 
 The books can be filtered by genre.
 
@@ -460,8 +494,35 @@ The books can be filtered by genre.
 
 ![Book Name](screenshot/scienceFIlter.png)
 
-1.6 Version:
+1.7 Version:
 
 Php version -> 8.0.2
 
 laravel version -> 9.19 
+
+1.8 Test:
+
+1.8.1 Author Feature test:
+
+The Feature test has been done for authors.
+
+![Author](screenshot/testAuthor.png)
+
+1.8.2 Genre Feature test:
+
+The Feature test has been done for genre.
+
+![Genre](screenshot/testGenre.png)
+
+1.8.3 Publisher Feature test:
+
+The Feature test has been done for publisher.
+
+![Genre](screenshot/testPublisher.png)
+
+1.8.4 Borrower Feature test:
+
+The Feature test has been done for publisher.
+
+![Borrower](screenshot/testBorrowers.png)
+

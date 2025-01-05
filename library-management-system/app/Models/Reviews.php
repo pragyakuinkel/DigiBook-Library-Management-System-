@@ -44,3 +44,4 @@ class Reviews extends Model
         return $this->morphTo();
     }
 }
+

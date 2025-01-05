@@ -8,6 +8,7 @@
 
                 <form class="px-6 mb-6 w-full text_color" method="POST" action="{{ route('genre.editIt', $genre->id) }}">
                     @csrf
+                    @method('PUT') 
                     
                     <div>
                         <label for="name" class="text-xs">Genre Name</label><br>

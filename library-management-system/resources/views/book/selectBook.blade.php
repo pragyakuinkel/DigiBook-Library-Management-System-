@@ -9,7 +9,7 @@
                         </h2>
                     </div>
 
-                    <div class="card-group flex text_color mt-1 mb-4" style="flex-wrap:wrap;border-radius: 15px;justify-content:center">
+                    <div class="card-group flex text_color mt-1 mb-4" style="flex-wrap:wrap;border-radius: 15px;justify-content:start">
                         @foreach($books as $book)
                                 <div class="flex flex-col book" style="transition: all 0.3s ease;align-items:center;max-width:20%;min-width:150px;margin:10px">
                                     <img src="{{ asset('storage/' . $book->image) }}" alt="Book Image" style="border-radius: 5px;width:90%;margin-top:10px" >

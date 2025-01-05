@@ -62,7 +62,7 @@ class UserSideController extends Controller
 
         $borrowed = DB::table('borrowers')            
                     ->where('user_id', Auth::user()->id)   
-                    ->get();                             
+                    ->get();    
         
         return view('book.bookHistory', ['publishers' => $publishers,'authors'=>$authors,'books'=>$books,"book_author"=>$book_author,"book_genre"=>$book_genre,"genres"=>$genres,"borrowed"=>$borrowed]);
     }
