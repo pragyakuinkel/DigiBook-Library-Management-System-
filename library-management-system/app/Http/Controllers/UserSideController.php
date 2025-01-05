@@ -74,6 +74,8 @@ class UserSideController extends Controller
                     ->get();
 
         $books = DB::table('books')
+                    ->join('book_genres', 'books.id', '=', 'book_genres.book_id')
+                    ->where('book_genres.genre_id', $id)
                     ->orderBy('id','DESC')
                     ->paginate(10);
 
